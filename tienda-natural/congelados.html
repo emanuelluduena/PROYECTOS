@@ -2,271 +2,107 @@
 <html lang="es">
 
 <head>
-  <!-- =====================================
-       CONFIGURACIÓN BÁSICA DEL DOCUMENTO
-  ====================================== -->
-
-  <!-- Codificación de caracteres (acentos, ñ, etc.) -->
   <meta charset="UTF-8">
-
-  <!-- Título que aparece en la pestaña del navegador -->
-  <title>Sabores de la Tierra</title>
-
-  <!-- Vinculamos el archivo CSS -->
-  <!-- Este archivo contiene TODOS los estilos -->
+  <title>Congelados | Sabores de la Tierra</title>
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- =====================================
-       FUENTE TIPOGRÁFICA (GOOGLE FONTS)
-       Se carga antes del body
-  ====================================== -->
-
-  <!-- Optimización de conexión -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Fuente Poppins con distintos grosores -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- =====================================
-       HEADER
-       Contiene el nombre del sitio + navegación
-  ====================================== -->
   <header>
-
-    <!-- Nombre / logo del sitio -->
     <h1>Sabores de la Tierra</h1>
-
-    <!-- =====================================
-         NAVEGACIÓN PRINCIPAL
-         Menú del sitio
-    ====================================== -->
     <nav>
       <a href="index.html">Inicio</a>
       <a href="productos.html">Productos</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="carrito.html" class="nav-carrito">
-      <span>Carrito</span>
-
-  <div class="carrito-icono">
-    <span class="icono">🛒</span>
-    <span class="contador" id="contador-carrito">0</span>
-  </div>
-</a>
-
-</a>
-
+        <span>Carrito</span>
+        <div class="carrito-icono">
+          <span class="icono">🛒</span>
+          <span class="contador" id="contador-carrito">0</span>
+        </div>
+      </a>
     </nav>
-
   </header>
 
-  <!-- =====================================
-       MAIN
-       Contenido principal del sitio
-       SOLO puede haber un <main>
-  ====================================== -->
   <main>
 
-    <!-- =====================================
-         HERO
-         Sección destacada de presentación
-    ====================================== -->
     <section class="hero">
       <h2>Alimentación consciente para una vida mejor</h2>
       <p>Productos naturales seleccionados con cuidado</p>
     </section>
 
-    <!-- =====================================
-         CATEGORÍAS
-         Lista simple de categorías
-    ====================================== -->
-    <section class="categorias">
-
-  <h2>Categorías</h2>
-
-  <ul>
-    <li><a href="frutos-secos.html">Frutos secos</a></li>
-    <li><a href="semillas.html">Semillas</a></li>
-    <li><a href="harinas.html">Harinas</a></li>
-    <li><a href="suplementos.html">Suplementos</a></li>
-    <li><a href="granolas.html">Granolas</a></li>
-    <li><a href="congelados.html">Congelados</a></li>
-  </ul>
-
-</section>
-
-
-    <!-- =====================================
-         PRODUCTOS
-         Sección tipo tienda
-    ====================================== -->
+    <!-- PRODUCTOS DESTACADOS -->
     <section class="productos">
-
-      <!-- Título de la sección -->
-      <h2>Productos destacados</h2>
-
-      <!-- =====================================
-           CONTENEDOR FLEX
-           Este div SOLO sirve para ordenar
-      ====================================== -->
-      <div class="productos-grid">
-
-        <!-- PRODUCTO 1 -->
-        <article class="producto">
-          <h3>Almendras Naturales</h3>
-          <p class="precio">$4.500</p>
-          <p>Fuente natural de energía</p>
-          <button class="btn-producto"
-                  data-nombre="Almendras Naturales"
-                  data-precio="4500"
-                  onclick="agregarAlCarrito(this)"
-          >
-            Agregar al carrito
-          </button>
-          </article>
-
-        <!-- PRODUCTO 2 -->
-        <article class="producto">
-          <h3>Mix Energético</h3>
-          <p class="precio">$4.500</p>
-          <p>Fuente natural de energía</p>
-          <button class="btn-producto"
-                  data-nombre="Mix Energético"
-                  data-precio="4500"
-                  onclick="agregarAlCarrito(this)"
-          >
-            Agregar al carrito
-          </button>
-          </article>
-
-        <!-- PRODUCTO 3 -->
-        <article class="producto">
-          <h3>Nueces</h3>
-          <p class="precio">$4.500</p>
-          <p>Fuente natural de energía</p>
-          <button class="btn-producto"
-                  data-nombre="Nueces"
-                  data-precio="4500"
-                  onclick="agregarAlCarrito(this)"
-          >
-            Agregar al carrito
-          </button>
-          </article>
-
-        <!-- PRODUCTO 4 -->
-        <article class="producto">
-          <h3>Gelatina sin sabor</h3>
-          <p class="precio">$4.500</p>
-          <p>Fuente natural de energía</p>
-          <button class="btn-producto"
-                  data-nombre="Gelatina sin sabor"
-                  data-precio="4500"
-                  onclick="agregarAlCarrito(this)"
-          >
-            Agregar al carrito
-          </button>
-          </article>
-
-      </div>
-      
-
+      <h2>Productos Destacados</h2>
+      <div class="productos-grid" id="productos-destacados"></div>
     </section>
 
-<!-- =====================================
-     CARRITO DE COMPRAS
-====================================== -->  
-  
-<section class="carrito">
-  <h2>🛒 Carrito</h2>
+    <!-- CATEGORÍAS -->
+    <section class="categorias">
+      <h2>Categorías</h2>
+      <ul>
+        
+      </ul>
+    </section>
 
-  Lista de productos agregados 
-  <div class="carrito-items">
-    <p class="carrito-vacio">El carrito está vacío</p>
-  </div>
+    <!-- CONGELADOS -->
+    <section class="productos">
+      <h2>Congelados</h2>
+      <div class="productos-grid" id="productos-categoria"></div>
+    </section>
 
-  <div class="carrito-footer">
-    <strong>Total: $0</strong>
-    <button id="btn-finalizar-compra" class="btn-finalizar">
-      Finalizar Compra
-    </button>
-  </div>
-
- 
-
-
-</section>
+    <section class="carrito">
+      <h2>🛒 Carrito</h2>
+      Lista de productos agregados
+      <div class="carrito-items">
+        <p class="carrito-vacio">El carrito está vacío</p>
+      </div>
+      <div class="carrito-footer">
+        <strong>Total: $0</strong>
+        <button id="btn-finalizar-compra" class="btn-finalizar">
+          Finalizar Compra
+        </button>
+      </div>
+    </section>
 
   </main>
 
-  <!-- =====================================
-       FOOTER
-       Información de contacto
-  ====================================== -->
   <footer>
-    <p>📍 
-      <a href="https://maps.app.goo.gl/as6M8Drw7A7B4qcY6"
-      target="_blank"
-      class="footer-link"
-    >
-      Independencia 1054 - Córdoba
+    <p>📍
+      <a href="https://maps.app.goo.gl/as6M8Drw7A7B4qcY6" target="_blank" class="footer-link">
+        Independencia 1054 - Córdoba
       </a>
     </p>
-    <p>
-    📲 WhatsApp:
-    <a href="https://wa.me/5493515426971" target="_blank">
-      Escribinos
-    </a>
-  </p>
-    
-    <p>
-    📸
-    <a 
-      href="https://www.instagram.com/saboresdelatierradiet/"
-      target="_blank"
-      class="footer-link"
-    >
-      @saboresdelatierradiet
-    </a>
-  </p>
-
+    <p>📲 WhatsApp:
+      <a href="https://wa.me/5493515426971" target="_blank">Escribinos</a>
+    </p>
+    <p>📸
+      <a href="https://www.instagram.com/saboresdelatierradiet/" target="_blank" class="footer-link">
+        @saboresdelatierradiet
+      </a>
+    </p>
   </footer>
 
-  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5493515426971?text=Hola%20%F0%9F%91%8B%F0%9F%98%8A%20quisiera%20hacer%20una%20consulta%20sobre%20sus%20productos%20naturales%20%F0%9F%8C%B1"
+    class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
 
-<a
-  href="https://wa.me/5493515426971?text=Hola%20%F0%9F%91%8B%F0%9F%98%8A%20quisiera%20hacer%20una%20consulta%20sobre%20sus%20productos%20naturales%20%F0%9F%8C%B1"
+  <script>
+    const botonFinalizar = document.getElementById("btn-finalizar-compra");
+    botonFinalizar.addEventListener("click", () => {
+      window.location.href = "carrito.html";
+    });
+  </script>
 
-
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="Contactar por WhatsApp"
->
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp"
-  />
-</a>
-
-
-
-<script>
-  console.log("JS CARGADO");
-</script>
-
-<script>
-  const botonFinalizar = document.getElementById("btn-finalizar-compra");
-
-  botonFinalizar.addEventListener("click", () => {
-    // Redirige a la página del carrito
-    window.location.href = "carrito.html";
-  });
-</script>
-
-<script src="js/main.js"></script>
-
+  <script>
+    const categoriaActual = "congelados";
+  </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

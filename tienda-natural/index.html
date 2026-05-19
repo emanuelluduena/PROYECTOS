@@ -79,6 +79,46 @@
       <p>Productos naturales seleccionados con cuidado</p>
     </section>
 
+    <!-- CARRUSEL INSTAGRAM -->
+<section class="instagram-section">
+  <h2>Seguinos en Instagram</h2>
+  <p>@saboresdelatierradiet</p>
+
+  <div class="carrusel-container">
+    <button class="carrusel-btn izquierda" onclick="moverCarrusel(-1)">&#8592;</button>
+
+    <div class="carrusel-track" id="carrusel-track">
+
+      <!-- VIDEO 1 -->
+      <div class="carrusel-item">
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/reel/DYX4C-zPFyD/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
+
+
+      <!-- VIDEO 2 -->
+      <div class="carrusel-item">
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/reel/DXxYnHOPNRw/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14">
+        </blockquote>
+      </div>
+      <!-- Cuando tengas más videos, agregás más <div class="carrusel-item"> acá -->
+
+    </div>
+
+    <button class="carrusel-btn derecha" onclick="moverCarrusel(1)">&#8594;</button>
+  </div>
+
+  <a href="https://www.instagram.com/saboresdelatierradiet/" target="_blank" class="btn-instagram">
+    Ver más en Instagram
+  </a>
+</section>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
     <!-- =====================================
          CATEGORÍAS
          Lista simple de categorías
@@ -88,12 +128,7 @@
   <h2>Categorías</h2>
 
   <ul>
-    <li><a href="frutos-secos.html">Frutos secos</a></li>
-    <li><a href="semillas.html">Semillas</a></li>
-    <li><a href="harinas.html">Harinas</a></li>
-    <li><a href="suplementos.html">Suplementos</a></li>
-    <li><a href="granolas.html">Granolas</a></li>
-    <li><a href="congelados.html">Congelados</a></li>
+    
   </ul>
 
 </section>
@@ -105,94 +140,12 @@
     ====================================== -->
     <section class="productos">
 
-      <!-- Título de la sección -->
-      <h2>Productos destacados</h2>
+      <section class="productos">
+  <h2>Productos Destacados</h2>
+  <div class="productos-grid" id="productos-destacados"></div>
+</section>
 
-      <!-- =====================================
-           CONTENEDOR FLEX
-           Este div SOLO sirve para ordenar
-      ====================================== -->
-      <div class="productos-grid">
-
-        <!-- PRODUCTO 12 -->
-<article class="producto">
-  <img src="img/flor-hibiscus.jpg" alt="Flor de Hibiscus x 1 kg" class="producto-imagen">
-  <h3>Flor de Hibiscus x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Antioxidantes · Vitaminas · Energia</p>
-  <button class="btn-producto"
-          data-nombre="Flor de Hibiscus x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 13 -->
-<article class="producto">
-  <img src="img/gelatina-sin-sabor.jpg" alt="Gelatina Sin Sabor x 1 kg" class="producto-imagen">
-  <h3>Gelatina Sin Sabor x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Proteinas · Bajo Calorias · Energia</p>
-  <button class="btn-producto"
-          data-nombre="Gelatina Sin Sabor x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 15 -->
-<article class="producto">
-  <img src="img/citrato-potasio.jpg" alt="Citrato de Potasio x 1 kg" class="producto-imagen">
-  <h3>Citrato de Potasio x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Minerales · Energia · Corazon</p>
-  <button class="btn-producto"
-          data-nombre="Citrato de Potasio x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-
-<!-- PRODUCTO 16 -->
-<article class="producto">
-  <img src="img/creatina-monohidrato.jpg" alt="Creatina Monohidrato x 1 kg" class="producto-imagen">
-  <h3>Creatina Monohidrato x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Musculos · Recuperacion</p>
-  <button class="btn-producto"
-          data-nombre="Creatina Monohidrato x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 18 -->
-<article class="producto">
-  <img src="img/colageno-hidrolizado.jpg" alt="Colágeno Hidrolizado x 250 gr" class="producto-imagen">
-  <h3>Colágeno Hidrolizado x 250 gr</h3>
-  <p class="precio">$4.500</p>
-  <p>Piel · Articulaciones · Cabello</p>
-  <button class="btn-producto"
-          data-nombre="Colágeno Hidrolizado x 250 gr"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-
-
-
+      
       </div>
       
 
@@ -288,6 +241,9 @@
   });
 </script>
 
+<script>
+  const categoriaActual = "todos";
+</script>
 <script src="js/main.js"></script>
 
 

@@ -79,6 +79,11 @@
       <p>Productos naturales seleccionados con cuidado</p>
     </section>
 
+    <section class="productos">
+  <h2>Productos Destacados</h2>
+  <div class="productos-grid" id="productos-destacados"></div>
+</section>
+
     <!-- =====================================
          CATEGORÍAS
          Lista simple de categorías
@@ -88,12 +93,7 @@
   <h2>Categorías</h2>
 
   <ul>
-    <li><a href="frutos-secos.html">Frutos secos</a></li>
-    <li><a href="semillas.html">Semillas</a></li>
-    <li><a href="harinas.html">Harinas</a></li>
-    <li><a href="suplementos.html">Suplementos</a></li>
-    <li><a href="granolas.html">Granolas</a></li>
-    <li><a href="congelados.html">Congelados</a></li>
+    
   </ul>
 
 </section>
@@ -103,190 +103,14 @@
          PRODUCTOS
          Sección tipo tienda
     ====================================== -->
-    <section class="productos">
-
-      <!-- Título de la sección -->
-      <h2>Frutos Secos</h2>
-
-      <!-- =====================================
-           CONTENEDOR FLEX
-           Este div SOLO sirve para ordenar
-      ====================================== -->
-      <div class="productos-grid">
-
-        <!-- PRODUCTO 1 -->
-<article class="producto">
-  <img src="img/almendras.jpg" alt="Almendras x 500 gr" class="producto-imagen">
-  <h3>Almendras x 500 gr</h3>
-  <p class="precio">$4.500</p>
-  <p>Vitamina E · Fibra · Corazon</p>
-  <button class="btn-producto"
-          data-nombre="Almendras x 500 gr"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 2 -->
-<article class="producto">
-  <img src="img/nueces.jpg" alt="Nueces x 500 gr" class="producto-imagen">
-  <h3>Nueces x 500 gr</h3>
-  <p class="precio">$4.500</p>
-  <p>Omega 3 · Antioxidantes · Cerebro</p>
-  <button class="btn-producto"
-          data-nombre="Nueces x 500 gr"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 3 -->
-<article class="producto">
-  <img src="img/pistachos.jpg" alt="Pistachos Salados x 500 gr" class="producto-imagen">
-  <h3>Pistachos Salados x 500 gr</h3>
-  <p class="precio">$4.500</p>
-  <p>Antioxidantes · Proteinas · Energia</p>
-  <button class="btn-producto"
-          data-nombre="Pistachos Salados x 500 gr"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 4 -->
-<article class="producto">
-  <img src="img/mani con sal.jpg" alt="Maní Salado x 500 gr" class="producto-imagen">
-  <h3>Mani Salado x 500 gr</h3>
-  <p class="precio">$4.500</p>
-  <p>Proteinas · Energia · Saciedad</p>
-  <button class="btn-producto"
-          data-nombre="Mani Salado x 500 gr"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 5 -->
-<article class="producto">
-  <img src="img/mani sin sal.jpg" alt="Maní Sin Sal x 1 kg" class="producto-imagen">
-  <h3>Mani Sin Sal x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Proteinas · Energia · Saciedad</p>
-  <button class="btn-producto"
-          data-nombre="Mani Sin Sal x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-   
-<!-- PRODUCTO 19 -->
-<article class="producto">
-  <img src="img/mix-clasico.jpg" alt="Mix Clasico x 1 kg" class="producto-imagen">
-  <h3>Mix Clasico x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Proteinas · Fibra</p>
-  <button class="btn-producto"
-          data-nombre="Mix Clasico x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
+    <!-- PRODUCTOS DESTACADOS -->
 
 
-<!-- PRODUCTO 20 -->
-<article class="producto">
-  <img src="img/mix-nevado.jpg" alt="Mix Nevado x 1 kg" class="producto-imagen">
-  <h3>Mix Nevado x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Proteinas · Fibra</p>
-  <button class="btn-producto"
-          data-nombre="Mix Nevado x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 21 -->
-<article class="producto">
-  <img src="img/mix-tropical.jpg" alt="Mix Tropical x 1 kg" class="producto-imagen">
-  <h3>Mix Tropical x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Vitaminas · Fibra</p>
-  <button class="btn-producto"
-          data-nombre="Mix Tropical x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 22 -->
-<article class="producto">
-  <img src="img/mix-sin-mani.jpg" alt="Mix Sin Mani x 1 kg" class="producto-imagen">
-  <h3>Mix Sin Mani x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Fibra · Vitaminas</p>
-  <button class="btn-producto"
-          data-nombre="Mix Sin Mani x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 23 -->
-<article class="producto">
-  <img src="img/mix-sin-pasas.jpg" alt="Mix Sin Pasas x 1 kg" class="producto-imagen">
-  <h3>Mix Sin Pasas x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Proteinas · Fibra</p>
-  <button class="btn-producto"
-          data-nombre="Mix Sin Pasas x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-<!-- PRODUCTO 24 -->
-<article class="producto">
-  <img src="img/mix-premium.jpg" alt="Mix Premium x 1 kg" class="producto-imagen">
-  <h3>Mix Premium x 1 kg</h3>
-  <p class="precio">$4.500</p>
-  <p>Energia · Proteinas · Fibra</p>
-  <button class="btn-producto"
-          data-nombre="Mix Premium x 1 kg"
-          data-precio="4500"
-          onclick="agregarAlCarrito(this)">
-
-            Agregar al carrito
-          </button>
-</article>
-
-
-
-      </div>
-      
-
-    </section>
+<!-- FRUTOS SECOS -->
+<section class="productos">
+  <h2>Frutos Secos</h2>
+  <div class="productos-grid" id="productos-categoria"></div>
+</section>
 
 <!-- =====================================
      CARRITO DE COMPRAS
@@ -378,6 +202,9 @@
   });
 </script>
 
+<script>
+  const categoriaActual = "frutos-secos";
+</script>
 <script src="js/main.js"></script>
 
 
